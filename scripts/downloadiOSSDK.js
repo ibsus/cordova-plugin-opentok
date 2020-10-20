@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-var q = require('q');
 
 module.exports = function (context) {
     var IosSDKVersion = "OpenTok-iOS-2.16.6";
     var downloadFile = require('./downloadFile.js'),
         exec = require('./exec/exec.js'),
+        q = require('q');
         deferral = new q.defer();
     console.log('Downloading OpenTok iOS SDK');
     downloadFile('https://s3.amazonaws.com/artifact.tokbox.com/rel/ios-sdk/' + IosSDKVersion + '.tar.bz2',
