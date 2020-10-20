@@ -3,7 +3,7 @@
 var q = require('q');
 
 module.exports = function (context) {
-    var IosSDKVersion = "OpenTok-iOS-2.15.3";
+    var IosSDKVersion = "OpenTok-iOS-2.16.6";
     var downloadFile = require('./downloadFile.js'),
         exec = require('./exec/exec.js'),
         deferral = new q.defer();
