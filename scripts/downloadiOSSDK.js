@@ -2,7 +2,7 @@
 
 
 module.exports = function (context) {
-    var IosSDKVersion = "OpenTok-iOS-2.16.6";
+    var IosSDKVersion = "OpenTok-iOS-2.18.1";
     var downloadFile = require('./downloadFile.js'),
         exec = require('./exec/exec.js'),
         q = require('q');
